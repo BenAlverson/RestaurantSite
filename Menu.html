@@ -3,22 +3,55 @@
     <head>
         <title>Restaurant Site</title>
     <style>
+    table, th, td{
+        border: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+    }    
     .center{
         text-align: center;
     }
-    td{
-        width:33%;
+    th, td{
+        border: 1px solid black;
+    }
+    th{
+        background-color:#1977CA ;
+    }
+    table{
+        border: 1px  solid black;
+        border-collapse: collapse;
+        width: 100%;
     }
     </style>
+    <link href="restaurantStyles.css"	
+        rel="stylesheet" 		
+        type="text/css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
     </head>
     <body>
-        <h1 class="center">Restaurant Name</h1>
-        <hr/><br/>
-        <a href="index.html">Home</a>&emsp;
-        <a href="Menu.html">Menu</a>&emsp;
-        <a href="Contact.html">Contact Us</a>
-        <br/><br/><hr/>
-        <table class="center" border="1" width="100%">
+    <h1>Restaurant Name</h1>
+    <hr/>
+    <ul class="nav nav-pills">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li class="active"><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    <hr/>
+    <table class="center">
+        <thead>
+            <tr>
+                <th colspan="3" bgcolor><h2>Entrees</h2></th>
+            </tr></thead>
             <tr>
                 <td>
                     <h3>Burger and Fries</h3>
@@ -83,12 +116,37 @@
                         $7.95
                     </p>
                 </td>
-                </tr>
+            </tr>
+        </table>
+        <br/>
+        <table class="center">
+            <tr>
+                <th colspan="4"><h2>Beverages</h2></th>
+            </tr>
+            <tr>
+                <td style="width:25%">
+                    Root Beer<br/>
+                    $3.00
+                </td>
+                <td style="width:25%">
+                    Bottled Water<br/>
+                    $1.25
+                </td>
+                <td style="width:25%">
+                    Lemonade<br/>
+                    $1.00
+                </td>
+                <td style="width:25%">
+                    Iced Tea<br/>
+                    $1.25
+                </td>
+            </tr>
         </table>
         <br/><br/><br/><hr/>
-        <div class="center">
-            <h3>Street, City, State, Zipcode</h3>
-            Telephone Number
+        <div class="banner">
+            <div class="center-me">Street, City, State, Zipcode<br/>
+                Telephone Number
+                </div>
         </div>
     </body>
 </html>

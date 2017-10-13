@@ -1,37 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <meta charset="utf-8"/>
         <title>Restaurant Site</title>
-    <style>
-    h1, div{
-        text-align: center;
-    }
-    p{
-        width: 50%;
-        padding: 25px;
-        border: 1px solid black;
-        margin: auto;
-    }
-    </style>
+    <link href="restaurantStyles.css"	
+        rel="stylesheet" 		
+        type="text/css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <noscript><p style="text-align: center; font-size:25px;">This site is best viewed with JavaScript enabled.<p></noscript>
+    
     </head>
     <body>
-        <h1>Restaurant Name</h1>
-        <hr/><br/>
-        <a href="index.html">Home</a>&emsp;
-        <a href="Menu.html">Menu</a>&emsp;
-        <a href="Contact.html">Contact Us</a>
-        <br/><br/><hr/><br/>
-        <img src="hamburger-and-fries.jpg" alt="Hamburger and fries" style="display:block; width: 400px; margin:auto;"><br/>
-        <div>
-            <p>
-                Restaurant Description<br/>
-                Some description pertaining to this "totally" real resteraunt.
-            </p> 
+        <h1 style="font-size:50px;">Restaurant Name</h1>
+        <hr/>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+        <hr/>
+    <!-- Carousel -->
+    <div class="container">    
+        <div class="carousel slide" id="myCarousel" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol>
+
+            <!-- wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active" id="slide1">
+                    <img src="images/open.jpg"/>
+                    <div class="carousel-caption">
+                        <h4>We're opening a new location!</h4>
+                    </div>
+                </div>
+
+                <div class="item" id="slide2">
+                    <img src="images/seasonal.png"/>
+                    <div class="carousel-caption">
+                        <h4>We're rolling out our seasonal menu, with special options for this season.</h4>
+                    </div>
+                </div>
+
+                <div class="item" id="slide3">
+                    <img src="images/special.png"/>
+                    <div class="carousel-caption">
+                        <h4>The Drink of the Month is SG Special Brew.</h4>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Controls-->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+                <span class="icon-prev"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel">
+                <span class="icon-next"></span>
+                <span class="sr-only">Previous</span>
+            </a>
         </div>
-        <br/><hr/>
-        <div>
-            <h3>Street, City, State, Zipcode</h3>
-            Telephone Number
+    </div>
+    <br/>
+    <img src="images/hamburger-and-fries.jpg" alt="Hamburger and fries" style="display:block; width: 50%; max-width: 1000px; margin:auto;"><br/>
+
+        <div class="banner">
+            <div class="center-me" style="font-size:20px;">
+                Some description pertaining to this "totally" real resteraunt.
+            </div>
+        </div>
+        
+        <br/><hr/><br/>
+
+        <div class="banner">
+            <div class="center-me">
+                Street, City, State, Zipcode<br/>
+                Telephone Number
+                </div>
         </div>
     </body>
 </html>

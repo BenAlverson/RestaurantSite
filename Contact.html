@@ -9,77 +9,81 @@
     .center{
         text-align: center;
     }
-    .w{
-        width: 19em;
-    }
+
     textarea{
-        vertical-align: top;
+        vertical-align: bottom;
     }
     </style>
+    <link href="restaurantStyles.css"	
+        rel="stylesheet" 		
+        type="text/css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
     </head>
     <body>
-        <h1 class="center">Restaurant Name</h1>
-        <hr/><br/>
-        <a href="index.html">Home</a>&emsp;
-        <a href="Menu.html">Menu</a>&emsp;
-        <a href="Contact.html">Contact Us</a>
-        <br/><hr/><br/><br/><br/>
+        <h1>Restaurant Name</h1>
+        <hr/>
+        <ul class="nav nav-pills">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li class="active"><a href="Contact.html">Contact Us</a></li>
+        </ul>
+        <hr/>
         <form action="#" class="center" method="post">
-            <table style="margin: auto;">
-                <tr>
-                    <td>
-                        <label id="NameLabel" for="Name">Name: </label>
-                    </td>
-                    <td>
-                            <input id="Name" name="name" type="text" class="w" placeholder="First Last"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label id="EmailLabel" for="Email">Email: </label>
-                    </td>
-                    <td>
-                        <input id="Email" name="Email" type="text" class="w"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label id="PhoneLabel" for="Phone">Phone: </label>
-                    </td>
-                    <td>
-                        <input id="Phone" name="Phone" type="text" class="w"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label id="ResonLabel" for="Reason">Reason for Inquiry: </Label>
-                    </td>
-                    <td>
-                        <select id="Reason" name="Reason" class="w">
-                            <option value="Catering">Catering</option>
-                            <option value="Private Party">Private Party</option>
-                            <option value="Feedback">Feedback</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label id="InfoLabel" for="Info">Additional Information: </label>
-                    </td>
-                    <td>
-                        <textarea id="Info" name="Info" cols="30" rows="10"></textarea>
-                    </td>
-                </tr>
-                <tr>
-
-                </tr>
-            </table>
+            
+            <label id="NameLabel" for="Name">Name: </label>
+                    
+            <input id="Name" name="name" type="text" placeholder="First Last"/><br/>
+                    
+            <label id="EmailLabel" for="Email">Email: </label>
+                    
+            <input id="Email" name="Email" type="text" /><br/>
+                    
+            <label id="PhoneLabel" for="Phone">Phone: </label>
+                   
+            <input id="Phone" name="Phone" type="text" /><br/>
+                    
+            <label id="ResonLabel" for="Reason">Reason for Inquiry: </Label>
+                    
+            <select id="Reason" name="Reason">
+                <option value="Catering">Catering</option>
+                <option value="Private Party">Private Party</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select><br/>
+                   
+            <label id="InfoLabel" for="Info">Additional Information: </label>
+                   
+            <textarea id="Info" name="Info" style="vertical-align: top;"></textarea><br/>
+            
+                <label id="" for="">Have you been to the restaurant?</label>
+                <input type="radio" id="" name="customer" value="No" checked/>No
+                <input type="radio" id=""  name="customer" value="Yes"/>Yes<br/>
+                
+                <label id="presentLabel" for="present">Best day(s) to contact you:</label>
+                <input type="checkbox" id="present" Name="present">M
+                <input type="checkbox" id="present" Name="present">T
+                <input type="checkbox" id="present" Name="present">W
+                <input type="checkbox" id="present" Name="present">Th
+                <input type="checkbox" id="present" Name="present">F<br/>
+                
+                <input type="submit" id="SubmitButton" value="Send Request"/>
+                   
         </form>
         <br/><hr/>
-        <div class="center">
-            <h3>Street, City, State, Zipcode</h3>
-            Telephone Number
+        <div class="banner">
+            <div class="center-me">Street, City, State, Zipcode<br/>
+                Telephone Number
+                </div>
         </div>
     </body>
 </html>
